@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Lovely Project</title>
+    <!-- boostrap files that I didn't even use -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css link file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery link file -->
+    <script src="jquery-3.7.1.min.js"></script>
+     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#menu">
+          <!--Add a video  -->
+          <video autoplay loop muted id="bgVideo">
+            <source src="imgs/free nature video background 006 1920 x 1080 25fps.mov" type="video/mp4">
+          </video>
+          <!-- Add navigation bar -->
+          <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">about</a>
+              </li>
+              <li><a href="#promise">Our Promise</a></li>
+              </li>
+            </ul>
+          </nav>
+          
+         <!--Create the home section with title, goal and join us button  -->
+          <div class="jumbotron" id="home">
+            <div class="container">
+              <h1>Complete Web Development course</h1>
+              <h2>Go from Zero-skills to cash-Earning Web Developer</h2>
+              <p><a href="#" class="btn">Join us now</a></p>
+            </div>
+          </div>
+
+         <!-- create about section showing course details using grid system -->
+          <div id="about">
+
+            <!-- container -->
+            <div class="container">
+
+              <!-- one row -->
+              <div class="row">
+
+                <!-- col 1 -->
+                <div class="col-md-4">
+                  <img src="imgs/star_logo-removebg-preview (1).png">
+                  <h2>High Quality Lectures</h2>
+                  <p>All lectures have been very well prepared for the best learning of future developers.</p>
+                </div>
+
+                <!-- col 2 -->
+                <div class="col-md-4">
+                  <img src="imgs/tools-removebg-preview.png">
+                  <h2>+80H of Rich content</h2>
+                  <p>Learn all major web technologies: HTML5,CSS3,javascript,jquery Twitter,Bootstrap,PHP,mySQL,Wordpress,Ajax, XML,json,Mobile apps, API's: Google Maps,Facebook and more.</p>
+                </div>
+                <!-- col 3 -->
+                <div class="col-md-4">
+                  <img src="imgs/help-removebg-preview.png">
+                  <h2>Get Help Anytime!</h2>
+                  <p>Post your question in the forums of the course where myself and thousand of students are happy to help!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!-- Create carousel -->
+          <div id="promise" class="container-fluid">
+            <div class="carousel slide" id="myCarousel" data-ride="carousel">
+              <!-- ordered lists -->
+              <ol class="carousel-indicators">
+                <li class="active slide" data-target="#myCarousel" data-slide-to="0"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="1"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="2"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="3"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="4"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="5"></li>
+                <li class="slide" data-target="#myCarousel" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <!-- item 1 -->
+                <div class="item active">
+                  <img src="imgs/school-916678_640.jpg">
+                <div class="carousel-caption">
+                  <h2>Crystal clear and engage 100% Hands-on lectures</h2>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="item">
+                <img src="imgs/puzzle-3486886_640.jpg">
+              <div class="carousel-caption">
+                <h2>Full cirriculum including all major web technologies: Front-End, Back end, Mobile Apps and API's.</h2>
+              </div>
+            </div>
+              <!-- item 3 -->
+              <div class="item">
+                <img src="imgs/bonsai-6114252_640.jpg">
+              <div class="carousel-caption">
+                <h2>Start Making money from week 1 and earn over 30000$ by the time you finish the course.</h2>
+              </div>
+              </div>
+              <!-- item 4 -->
+              <div class="item">
+                <img src="imgs/indoor-5235953_640.jpg">
+              <div class="carousel-caption">
+                <h2>Lifetime access to all course material</h2>
+              </div>
+              </div>
+              <!-- item 5 -->
+              <div class="item">
+                <img src="imgs/web-2496193_640.jpg">
+              <div class="carousel-caption">
+                <h2>Build over 15 real professional Websites,Games and Mobile apps</h2>
+              </div>
+              </div>
+              <!-- item 6 -->
+              <div class="item">
+                <img src="imgs/laptop-2620118_640.jpg">
+              <div class="carousel-caption">
+                <h2>Enhance your career and employability skills. </h2>
+              </div>
+              </div>
+              <!-- item 7 -->
+              <div class="item">
+                <img src="imgs/start-5699157_640.jpg">
+              <div class="carousel-caption">
+                <h2>Start from zero-skills! No prior knowledge required!</h2>
+              </div>
+              </div>
+            </div>
+              <!-- links -->
+              <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+         <!-- Add footer -->
+          <div class="footer">
+            <div class="container">
+              <p>&copy;Website by codeamayl</p>
+            </div>
+          </div>
+           <!-- Script tags for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Javascript link file -->
+    <script src="script1.js"></script>
+  </body>
+</html>
